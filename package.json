@@ -1,5 +1,5 @@
 {
-  "name": "@sh/vuex-helper",
+  "name": "@aimjs/vuex-helper",
   "version": "0.0.1",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
