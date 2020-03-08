@@ -1,0 +1,41 @@
+{
+  "name": "@sh/vuex-helper",
+  "version": "0.0.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "description": "A tiny utility to generate vuex state and mutations easily",
+  "keywords": [
+    "vuex",
+    "helper"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "yarn build"
+  },
+  "homepage": "https://github.com/Youzhigang/vuex-helper.git#readme",
+  "bugs": {
+    "url": "https://github.com/Youzhigang/vuex-helper/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "jest": "^25.1.0",
+    "rollup": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youzhigang/vuex-helper.git"
+  },
+  "author": "ethany",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  }
+}
