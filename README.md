@@ -69,6 +69,25 @@ console.log(mutations)
  */
 ```
 
+支持嵌套的state, 但是不支持嵌套的mutation
+
+```javascript
+const nested = {
+  properties: {
+    obj: {
+      type: Object,
+      properties: {
+        obj1: {
+          type: Object,
+        }
+      }
+    }
+  }
+}
+const state = createState(nested) // { obj: { obj1: { a: 1, b: 666 } } }
+const mutations = createMutations(nested) // { setObj: [Function] }
+```
+
 ## License
 
 [MIT](LICENSE).
