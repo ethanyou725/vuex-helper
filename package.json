@@ -15,9 +15,9 @@
     "dev": "rollup -c -w",
     "pretest": "yarn build"
   },
-  "homepage": "https://github.com/Youzhigang/vuex-helper.git#readme",
+  "homepage": "http://sygit.suiyi.com.cn/0001721/vuex-helper/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/Youzhigang/vuex-helper/issues"
+    "url": "http://sygit.suiyi.com.cn/0001721/vuex-helper/issues"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.1",
@@ -28,9 +28,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Youzhigang/vuex-helper.git"
+    "url": "http://sygit.suiyi.com.cn/0001721/vuex-helper"
   },
-  "author": "ethany",
+  "author": "youzhigang",
   "files": [
     "dist"
   ],
