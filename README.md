@@ -1,11 +1,47 @@
 # vuex-helper
 
-通过声明JSON schema 对象(语法和vue组件props类似)的形式生成对应的 vuex state 和 mutations
+约定优于配置, 不需要再写
+
+```javascript
+export const UPDATE_USER_TOKEN = `UPDATE_USER_TOKEN`
+export const UPDATE_USER_CITY = `UPDATE_USER_TOKEN`
+...
+```
+
+之类的枯燥无聊的`mutation-types`
+
+通过声明 JSON schema 对象(语法和 vue 组件 props 类似)的形式生成对应的 vuex state 和 mutations
+
+比如生成的 state 如下
+
+```javascript
+const state = {
+  key1: 1,
+  key2: 2,
+  className: ""
+}
+```
+
+对应的 mutations 就是:
+
+```JavaScript
+const mutations = {
+  setKey1: function(state, payload) {
+    state["key1"] = payload
+  },
+  setKey2: function (state, payload) {
+    state["key2"] = payload
+  },
+  setClassName: function (state, payload) {
+    state['className'] = payload
+  }
+}
+```
 
 ## example
 
 ```javascript
-import  { createState, createMutations } from '@sh/vuex-helper'
+import { createState, createMutations } from "@sh/vuex-helper"
 
 const testSchema = {
   properties: {
@@ -69,7 +105,7 @@ console.log(mutations)
  */
 ```
 
-支持嵌套的state, 但是不支持嵌套的mutation
+支持嵌套的 state, 但是不支持嵌套的 mutation
 
 ```javascript
 const nested = {
@@ -78,7 +114,7 @@ const nested = {
       type: Object,
       properties: {
         obj1: {
-          type: Object,
+          type: Object
         }
       }
     }
