@@ -38,6 +38,8 @@ const mutations = {
 }
 ```
 
+推荐使用vuex modules并且设置namespace为true
+
 ## example
 
 ```javascript
