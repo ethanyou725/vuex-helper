@@ -22,7 +22,7 @@ const state = {
 }
 ```
 
-对应的 mutations 如下, 约定默认的mutation格式为setAbc格式(state对应key首字母大写)
+对应的 mutations 如下, 约定默认的 mutation 格式为 setAbc 格式(state 对应 key 首字母大写)
 
 ```JavaScript
 const mutations = {
@@ -38,7 +38,7 @@ const mutations = {
 }
 ```
 
-推荐使用vuex modules并且设置namespace为true
+推荐使用 vuex modules 并且设置 namespace 为 true
 
 ## example
 
@@ -122,7 +122,7 @@ const nested = {
     }
   }
 }
-const state = createState(nested) // { obj: { obj1: { a: 1, b: 666 } } }
+const state = createState(nested) // { obj: { obj1: {  } } }
 const mutations = createMutations(nested) // { setObj: [Function] }
 ```
 
