@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "cover": "jest --coverage",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "pretest": "yarn build"
