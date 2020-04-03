@@ -22,7 +22,7 @@ const state = {
 }
 ```
 
-对应的 mutations 就是:
+对应的 mutations 如下, 约定默认的mutation格式为setAbc格式(state对应key首字母大写)
 
 ```JavaScript
 const mutations = {
